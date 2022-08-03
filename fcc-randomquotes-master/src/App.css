@@ -1,0 +1,52 @@
+
+.App {
+  background-color: #222f3e;
+  color: #222f3e;
+  height: 100vh;
+  width: 100vw;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  /* User Story #11: The #quote-box wrapper element should be horizontally centered. Please run tests with browser's zoom level at 100% and page maximized. */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#quote-box {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  border-radius: 1vw;
+  background-color: #c8d6e5;
+}
+
+.quote-container {
+  display: inline-block;
+  margin: auto;
+  padding: 1em;
+}
+
+#text {
+  font-size: 3em;
+  display: block;
+  margin: auto;
+  text-align: left;
+}
+
+#author {
+  text-align: right;
+  font-size: 1.5em;
+  padding-right: 1em;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+.App > #quote-box > .buttons-container > .quote-color {
+  padding: 1em;
+  background-color: #222f3e;
+  border: none;
+  color: #c8d6e5;
+}

@@ -1,0 +1,17 @@
+.calc-button {
+  background-color: rgb(221, 221, 221);
+  border: 1px solid black;
+  font-family: Orbitron, "Trebuchet MS", Helvetica, sans-serif;
+  color: black;
+  font-size: 1.5rem;
+  padding: 0.5em;
+  margin: 0.1em;
+}
+
+.calc-button:focus {
+  outline-color: black;
+}
+
+.calc-button:hover {
+  background-color: rgb(180, 180, 180);
+}

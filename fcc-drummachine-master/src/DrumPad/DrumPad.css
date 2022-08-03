@@ -1,0 +1,16 @@
+.drum-pad {
+  padding: 4px 6px;
+  font-size: 2em;
+  background-color: rgb(41, 41, 41);
+  color:  rgb(221, 221, 221);
+  border: 1px solid rgb(41, 41, 41);
+}
+
+.drum-pad:hover {
+  background-color: rgb(61,61,61);
+}
+
+.drum-pad:focus {
+  background-color: rgb(61,61,61);
+  outline-color: rgb(150, 150, 150); 
+}

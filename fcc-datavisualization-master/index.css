@@ -1,0 +1,19 @@
+body {
+  background-color: lightgray;
+}
+
+
+h1 {
+  text-align: center;
+}
+
+.links-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  padding: 0.5em;
+}

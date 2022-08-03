@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- include jquery. -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="index.css"> 
+  <script src="index.js"></script>
+  <title>Document</title>
+</head>
+<body>
+
+  <!-- https://learn.freecodecamp.org/coding-interview-prep/take-home-projects/show-the-local-weather/ -->
+  <div class="weather-container">
+    <h1 class="weather-header">Simple Weather</h1>
+    <div class="weather-item">
+      <img id="weather-icon" src="">
+      <p class="item-title item-title--desc" id="weather-desc"></p>
+    </div>
+    <div class="weather-item">
+      <p class="item-title">Temperature</p>
+      <div id="temp-container">
+        <p class="item-data" id="temp"></p>
+        <button class="item-button item-unit" id="temp-deg">&#176C</button>
+      </div> 
+    </div>
+    <div class="weather-item">
+      <p class="item-title">Humidity</p>
+      <p class="item-data" id="humid"></p>
+      <p class="item-unit" id="humid-p">%</p> 
+    </div>
+  </div>
+</body>
+</html>

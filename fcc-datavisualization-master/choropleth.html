@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>FCC: Visualize Data with a Choropleth Map</title>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.2/d3.min.js'></script>
+  <script src="https://unpkg.com/topojson@3"></script>
+  <script src='choropleth.js'></script>
+  <link rel="stylesheet" type="text/css" href="./choropleth.css">
+</head>
+<body>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <section>
+
+  <!-- User Story #10: I can mouse over an area and see a tooltip with a corresponding id="tooltip" which displays more information about the area. -->
+  <div class='tooltip-container' id='tooltip'>
+    <div class='tooltip-item' id="tooltip-name">
+        <div id='tooltip-county'></div>
+    </div>
+    <div class='tooltip-item'>
+        <div id='tooltip-bach'></div>
+    </div>
+    
+    
+  </div>
+  <div class='chart-container'>
+    <!-- User Story #1: My choropleth should have a title with a corresponding id="title". -->
+    <div id='title'>
+      US Education
+    </div>
+    <!-- User Story #2: My choropleth should have a description element with a corresponding id="description". -->
+    <div id='description'>
+      Percent of people age 25 or higher with a bachelor's degree by county.
+    </div>
+    <div id='chart' class='chart'>
+      <svg class='svg-chart'></svg>
+    </div>
+    <!-- User Story #8: My choropleth should have a legend with a corresponding id="legend". -->
+    <div id='legend'>
+      <div class='legend-item'>
+        <!-- User Story #15: The rect elements in the legend should use at least 4 different fill colors. -->
+        <svg class='legend-svg' width="40" height="20">
+          <!-- User Story #9: There should be at least 4 different fill colors used for the legend. -->
+          <!-- var colors = ["azure", "lightblue", "blue", "darkblue", "black"] -->
+          <rect width="40" height="20" fill="azure"></rect>
+        </svg>
+        <p class='legend-desc'>10%</p>
+      </div>
+      <div class='legend-item'>
+        <svg class='legend-svg' width="40" height="20">
+          <rect width="40" height="20" fill="lightblue"></rect>
+        </svg>
+      </div>
+      <div class='legend-item'>
+          <svg class='legend-svg' width="40" height="20">
+            <rect width="40" height="20" fill="blue"></rect>
+          </svg>
+
+      </div>
+      <div class='legend-item'>
+          <svg class='legend-svg' width="40" height="20">
+            <rect width="40" height="20" fill="darkblue"></rect>
+          </svg>
+
+      </div>
+      <div class='legend-item'>
+          <svg class='legend-svg' width="40" height="20">
+            <rect width="40" height="20" fill="black"></rect>
+          </svg>
+          <p class='legend-desc'>50%</p>
+      </div>
+    </div>
+  </div>
+  </section>
+</body>
+</html>

@@ -1,0 +1,23 @@
+.preview-container {
+  margin: auto;
+  padding-top: 1em;
+  width: fit-content;
+}
+
+.preview-label {
+  text-align: left;
+  padding: 1rem;
+  margin: 0;
+  display: block;
+  background-color: rgb(180, 180, 180);
+  width: 100%;
+}
+
+.preview-markdown {
+  background-color: rgb(220, 220, 220);
+  height: auto;
+  margin-bottom: 1em;
+  width: 75vw;
+  padding: 1em;
+}
+

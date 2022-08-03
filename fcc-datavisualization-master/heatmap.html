@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>FCC: Visualize Data with a Heat Map</title>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.2/d3.min.js'></script>
+  <script src='heatmap.js'></script>
+  <link rel="stylesheet" type="text/css" href="./heatmap.css">
+</head>
+<body>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <section>
+  <div class='tooltip-container' id='tooltip'>
+    <div class='tooltip-item'>
+        <div id='tooltip-month-year'></div>
+    </div>
+    <div class='tooltip-item'>
+        <div class='tooltip-item-desc'>Temp:</div>
+        <div id='tooltip-temp'></div>
+        &#8451
+    </div>
+    
+    
+  </div>
+  <div class='chart-container'>
+    <!-- User Story #1: My heat map should have a title with a corresponding id="title". -->
+    <div id='title'>
+      Monthly Global Land-Surface Temperature
+    </div>
+    <!-- User Story #2: My heat map should have a description with a corresponding id="description". -->
+    <div id='description'>
+      1753-2015 Global Temperatures with a base of 8.66&#8451
+    </div>
+    <div id='chart' class='chart'>
+      <svg class='svg-chart'></svg>
+    </div>
+    <!-- User Story #13: My heat map should have a legend with a corresponding id="legend". -->
+    <div id='legend'>
+      <div class='legend-item'>
+        <!-- User Story #15: The rect elements in the legend should use at least 4 different fill colors. -->
+        <svg class='legend-svg' width="40" height="20">
+          <!-- User Story #14: My legend should contain rect elements. -->
+          <rect width="40" height="20" fill="blue"></rect>
+        </svg>
+        <p class='legend-desc'>-1.5</p>
+      </div>
+      <div class='legend-item'>
+        <svg class='legend-svg' width="40" height="20">
+          <rect width="40" height="20" fill="lightblue"></rect>
+        </svg>
+        <p class='legend-desc'>0</p>
+      </div>
+      <div class='legend-item'>
+          <svg class='legend-svg' width="40" height="20">
+            <rect width="40" height="20" fill="white"></rect>
+          </svg>
+          <p class='legend-desc'>1.5</p>
+      </div>
+      <div class='legend-item'>
+          <svg class='legend-svg' width="40" height="20">
+            <rect width="40" height="20" fill="yellow"></rect>
+          </svg>
+          <p class='legend-desc'>3</p>
+      </div>
+      <div class='legend-item'>
+          <svg class='legend-svg' width="40" height="20">
+            <rect width="40" height="20" fill="red"></rect>
+          </svg>
+          <p class='legend-desc'>3+</p>
+      </div>
+    </div>
+  </div>
+  </section>
+</body>
+</html>

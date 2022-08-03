@@ -1,0 +1,47 @@
+.adjustable-times-container {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  justify-content: center;
+  align-content: center;
+  padding: 0.5em;
+
+  background-color: rgb(138, 175, 187);
+  width: fit-content;
+  padding: 0.25em 1em;
+  margin: 0.25em;
+  border-radius: 5px;
+  border: 1px solid rgb(81, 102, 109);
+  box-shadow: 0px 0px 5px 2px #888888;
+}
+
+.adjustable-times-label {
+  padding: 0.25em;
+}
+
+.adjustable-times-buttons-container {
+  display: flex;
+  padding: 0.5em;
+}
+
+.adjustable-times-button {
+  padding: 1em;
+  border: 0px solid;
+  border-radius: 5px;
+  width: fit-content;
+  background-color: rgb(166, 210, 224);
+}
+
+.adjustable-times-button:hover {
+  background-color: rgb(182, 229, 245);
+  color: rgb(54, 54, 54);
+}
+
+.adjustable-times-button:focus {
+  background-color: rgb(182, 229, 245);
+  color: rgb(54, 54, 54);
+}
+
+.adjustable-times-value {
+  margin: auto;
+}

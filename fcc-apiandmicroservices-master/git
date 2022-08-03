@@ -1,0 +1,7 @@
+Rename glitch branch:
+
+git fetch origin
+get checkout <old_branch_name>
+git branch -m <new_name>
+git push origin :<old_branch_name> <new_name>
+git push origin -u <new_name>

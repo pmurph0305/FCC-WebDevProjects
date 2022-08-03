@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>FCC: Visualize Data with a Treemap Diagram</title>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.2/d3.min.js'></script>
+  <script src="https://unpkg.com/topojson@3"></script>
+  <script src='treemap.js'></script>
+  <link rel="stylesheet" type="text/css" href="./treemap.css">
+</head>
+<body>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <section>
+
+  <!-- User Story #10: I can mouse over an area and see a tooltip with a corresponding id="tooltip" which displays more information about the area. -->
+  <div class='tooltip-container' id='tooltip'>
+    <div class='tooltip-item' id="tooltip-name">
+        <div id='tooltip-name'></div>
+    </div>
+    <div class='tooltip-item'>
+        <div id='tooltip-value'></div>
+    </div>
+    
+    
+  </div>
+  <div class='chart-container'>
+    <!-- User Story #1: My tree map should have a title with a corresponding id="title". -->
+    <div id='title'>
+      Videogame Kickstarter Projects
+    </div>
+    <!-- User Story #2: My tree map should have a description with a corresponding id="description". -->
+    <div id='description'>
+      Top 20 most supported videogame kickstarters
+    </div>
+    <div id='chart' class='chart'>
+      <svg class='svg-chart'></svg>
+    </div>
+    <!-- User Story #7: My tree map should have a legend with corresponding id="legend". -->
+    <div id='legend'>
+      <div class='legend-container'>
+        <div class='legend-item-container'>
+          <svg class='legend-svg' width="20" height="20">
+            <!-- User Story #8: My legend should have rect elements with a corresponding class="legend-item". -->
+            <!-- User Story #9: The rect elements in the legend should use at least 2 different fill colors. -->
+            <rect class='legend-item' width="20" height="20" fill="azure"></rect>
+          </svg>
+        </div>
+        <div class='legend-item-container'>
+          <svg class='legend-svg' width="250" height="20">
+              <defs>
+                <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" style="stop-color:azure;stop-opacity:1" />
+                  <stop offset="100%" style="stop-color:rgb(1, 158, 255);stop-opacity:1" />
+                </linearGradient>
+              </defs>
+            <rect class='legend-item'  width="250" height="20" fill="url(#gradient)"></rect>
+          </svg>
+        </div>
+        <div class='legend-item-container'>
+          <svg class='legend-svg' width="20" height="20">
+            <rect class='legend-item'  width="20" height="20" fill="rgb(1, 158, 255)"></rect>
+          </svg>
+        </div>
+      </div>
+      <div class='legend-desc-container'>
+          <p class='legend-desc'>$1,579,316</p>
+          <p class='legend-desc'>$6,333,295</p>
+      </div>
+    </div>
+    
+  </div>
+  </section>
+</body>
+</html>

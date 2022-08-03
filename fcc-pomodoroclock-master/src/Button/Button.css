@@ -1,0 +1,17 @@
+.pomo-button {
+  border: 0px solid;
+  border-radius: 5px;
+  background-color: lightblue;
+  margin: 0.25em;
+  padding: 1em 2em;
+}
+
+.pomo-button:hover {
+  background-color: rgb(182, 229, 245);
+  color: rgb(54, 54, 54);
+}
+
+.pomo-button:focus {
+  background-color: rgb(182, 229, 245);
+  color: rgb(54, 54, 54);
+}

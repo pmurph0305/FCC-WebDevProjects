@@ -1,0 +1,48 @@
+.App {
+  margin: auto;
+  background-color: rgb(166, 210, 224);
+  font-family: Orbitron, "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.app-session-break-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.timer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  background-color: rgb(138, 175, 187);
+  width: fit-content;
+  padding: 0.25em 1em;
+  margin: 0.25em;
+  border-radius: 5px;
+  border: 1px solid rgb(81, 102, 109);
+  box-shadow: 0px 0px 5px 2px #888888;
+}
+
+.timer-button-container {
+  display: flex;
+  justify-content: center;
+}
+
+#time-left {
+  margin: auto;
+  padding: 0.25em;
+}
+
+.timer-label {
+  margin: auto;
+  padding-bottom: 0.25em;
+}

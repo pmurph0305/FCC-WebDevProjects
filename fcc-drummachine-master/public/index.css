@@ -1,0 +1,5 @@
+/* root takes up whole screen. */
+html, body, #root {
+  height: 100%;
+  width: 100%;
+}
